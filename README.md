@@ -44,3 +44,4 @@ Astro-based landing page for Chinese Inbound Marketing Agency (BAMYOOL).
   - `--color-accent`: The main amber/yellow highlight (#FFC000)
   - `--color-bg-dark`: Background for Hero/Footer
 # bamyool
+# bamyool
