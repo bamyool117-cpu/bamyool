@@ -1,0 +1,239 @@
+---
+
+---
+
+<section class="section-pricing">
+    <div class="container">
+        <div class="text-center header">
+            <span class="badge">PRICING</span>
+            <h2>합리적인 투자로 시작하세요</h2>
+        </div>
+
+        <div class="pricing-grid">
+            <!-- BASIC -->
+            <div class="plan basic">
+                <div class="plan-header">
+                    <h3>BASIC</h3>
+                    <div class="price">
+                        500,000<span class="unit">원 / 월</span>
+                    </div>
+                </div>
+                <ul class="features">
+                    <li>전담 마케터 배정</li>
+                    <li>기초 상권/경쟁사 분석</li>
+                    <li>플랫폼 기본 세팅</li>
+                    <li>월간 리포트 제공</li>
+                </ul>
+                <a
+                    href="https://pf.kakao.com/PLACEHOLDER"
+                    class="btn btn-outline">상담하기</a
+                >
+            </div>
+
+            <!-- STANDARD -->
+            <div class="plan standard">
+                <div class="recommend-badge">권장</div>
+                <div class="plan-header">
+                    <h3>STANDARD</h3>
+                    <div class="price">
+                        1,200,000<span class="unit">원 / 월</span>
+                    </div>
+                </div>
+                <ul class="features">
+                    <li class="strong">BASIC 혜택 포함</li>
+                    <li>인플루언서 섭외 지원</li>
+                    <li>맞춤형 기획 콘텐츠 제작</li>
+                    <li>리뷰/댓글 집중 관리</li>
+                </ul>
+                <a
+                    href="https://pf.kakao.com/PLACEHOLDER"
+                    class="btn btn-primary">지금 시작하기</a
+                >
+            </div>
+
+            <!-- PRO -->
+            <div class="plan pro">
+                <div class="plan-header">
+                    <h3>PRO</h3>
+                    <div class="price">별도 협의<span class="unit"></span></div>
+                </div>
+                <ul class="features">
+                    <li class="strong">STANDARD 혜택 포함</li>
+                    <li>대규모 인플루언서 캠페인</li>
+                    <li>영상 콘텐츠 제작 지원</li>
+                    <li>프리미엄 1:1 컨설팅</li>
+                </ul>
+                <a
+                    href="https://pf.kakao.com/PLACEHOLDER"
+                    class="btn btn-outline">문의하기</a
+                >
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .section-pricing {
+        background: #f8f9fa;
+    }
+
+    .header {
+        margin-bottom: 4rem;
+    }
+
+    .badge {
+        display: inline-block;
+        padding: 6px 16px;
+        background: #e9ecef;
+        color: #495057;
+        font-size: 0.85rem;
+        font-weight: 700;
+        border-radius: 100px;
+        margin-bottom: 1rem;
+        letter-spacing: 0.1em;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    .pricing-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .plan {
+        background: white;
+        padding: 2.5rem;
+        border-radius: 20px;
+        border: 1px solid #eee;
+        text-align: center;
+        position: relative;
+        transition: transform 0.3s ease;
+    }
+
+    .plan:hover {
+        transform: translateY(-5px);
+    }
+
+    .plan.standard {
+        border-color: var(--color-accent);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); /* Highlighted plan */
+        transform: scale(1.05);
+        z-index: 2;
+    }
+    .plan.standard:hover {
+        transform: scale(1.05) translateY(-5px);
+    }
+
+    .recommend-badge {
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--color-accent);
+        color: black;
+        padding: 4px 12px;
+        border-radius: 12px;
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+
+    .plan-header {
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #f0f0f0;
+        padding-bottom: 2rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        font-weight: 800;
+        color: var(--color-text-sub);
+        letter-spacing: 0.05em;
+        margin-bottom: 0.5rem;
+    }
+
+    .price {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--color-text-main);
+    }
+
+    .unit {
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--color-text-sub);
+        margin-left: 4px;
+    }
+
+    .features {
+        text-align: left;
+        margin-bottom: 2.5rem;
+    }
+
+    .features li {
+        margin-bottom: 0.8rem;
+        padding-left: 1.5rem;
+        position: relative;
+        color: var(--color-text-sub);
+        font-size: 0.95rem;
+    }
+
+    .features li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: var(--color-accent);
+        font-weight: bold;
+    }
+
+    .features li.strong {
+        font-weight: 700;
+        color: var(--color-text-main);
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        border-radius: 10px;
+        font-weight: 700;
+        text-decoration: none;
+        transition: all 0.2s;
+    }
+
+    .btn-outline {
+        border: 1px solid #ddd;
+        color: var(--color-text-main);
+    }
+    .btn-outline:hover {
+        background: #f8f9fa;
+        border-color: #ccc;
+    }
+
+    .btn-primary {
+        background: var(--color-accent);
+        color: #111;
+        box-shadow: 0 4px 15px rgba(255, 192, 0, 0.3);
+    }
+    .btn-primary:hover {
+        background: var(--color-accent-hover);
+        transform: translateY(-2px);
+    }
+
+    @media (max-width: 900px) {
+        .pricing-grid {
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+        .plan.standard {
+            transform: scale(1);
+        }
+        .plan.standard:hover {
+            transform: translateY(-5px);
+        }
+    }
+</style>

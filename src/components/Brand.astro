@@ -1,0 +1,88 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+
+const logoPath = path.resolve('./public/logo.svg');
+const hasLogo = fs.existsSync(logoPath);
+---
+
+<div id="brand-pill" class="brand">
+  <a href="/" class="brand-link">
+    {hasLogo ? (
+      <img src="/logo.svg" alt="BAMYOOL" class="brand-logo" />
+    ) : (
+      <span class="brand-text">BAMYOOL</span>
+    )}
+  </a>
+</div>
+
+<style>
+  .brand {
+    position: fixed;
+    top: 24px;
+    left: 24px;
+    z-index: 999;
+    padding: 10px 24px;
+    
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 999px;
+    
+    transition: all 0.4s ease;
+    opacity: 0.35;
+    cursor: pointer;
+  }
+
+  .brand:hover {
+    opacity: 1.0 !important; /* Always show fully on hover */
+  }
+
+  /* State when scrolled past hero */
+  .brand.scrolled {
+    opacity: 1.0;
+    background: rgba(15, 5, 5, 0.85); /* Dark background for contrast on light sections */
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+
+  .brand-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .brand-text {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    font-family: inherit;
+  }
+
+  .brand-logo {
+    height: 20px;
+    width: auto;
+    display: block;
+  }
+</style>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const brand = document.getElementById('brand-pill');
+    const hero = document.getElementById('hero');
+    
+    if (brand && hero) {
+      window.addEventListener('scroll', () => {
+        const heroBottom = hero.offsetTop + hero.offsetHeight;
+        if (window.scrollY > (heroBottom - 100)) {
+          brand.classList.add('scrolled');
+        } else {
+          brand.classList.remove('scrolled');
+        }
+      });
+    }
+  });
+</script>

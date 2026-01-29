@@ -1,0 +1,121 @@
+---
+
+---
+
+<section class="section-problem">
+    <div class="container">
+        <div class="header text-center">
+            <span class="badge">PROBLEM</span>
+            <h2>왜 중국인 손님은<br />우리 가게에 오지 않을까요?</h2>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="icon">🔍</div>
+                <h3>검색 채널의 차이</h3>
+                <p>
+                    중국 관광객은<br /><strong>네이버/인스타</strong>를<br
+                    />거의 보지 않습니다.
+                </p>
+            </div>
+            <div class="card">
+                <div class="icon">📢</div>
+                <h3>홍보 방식의 한계</h3>
+                <p>
+                    단순 번역 등 <strong>한국식 홍보</strong>는<br />중국 플랫폼
+                    로직에서<br />노출이 약합니다.
+                </p>
+            </div>
+            <div class="card">
+                <div class="icon">📉</div>
+                <h3>실질적 전환 실패</h3>
+                <p>
+                    단순 노출만으로는<br />실제 <strong>방문과 매출</strong
+                    >로<br />이어지기 어렵습니다.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .section-problem {
+        background-color: var(--section-bg-offwhite);
+    }
+
+    .header {
+        margin-bottom: 3.5rem;
+    }
+
+    .badge {
+        display: inline-block;
+        padding: 6px 16px;
+        background: #e9ecef;
+        color: #495057;
+        font-size: 0.85rem;
+        font-weight: 700;
+        border-radius: 100px;
+        margin-bottom: 1rem;
+        letter-spacing: 0.1em;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 1.3;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .card {
+        background: #fff;
+        padding: 2.5rem 2rem;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+        transition: transform 0.3s ease;
+        text-align: center;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .icon {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: var(--color-text-main);
+    }
+
+    p {
+        font-size: 1.05rem;
+        color: var(--color-text-sub);
+        line-height: 1.6;
+    }
+
+    strong {
+        color: #d63384; /* Highlight for negative/warning */
+        background: rgba(214, 51, 132, 0.05);
+        padding: 0 4px;
+        border-radius: 4px;
+    }
+
+    @media (max-width: 768px) {
+        .grid {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+    }
+</style>

@@ -1,0 +1,162 @@
+---
+
+---
+
+<section class="section-case">
+    <div class="container">
+        <div class="text-center header">
+            <span class="badge">SIMULATION</span>
+            <h2>무엇이 달라질까요?</h2>
+            <p class="subtitle">체계적인 관리로 만들어지는 변화</p>
+        </div>
+
+        <div class="case-wrapper">
+            <div class="case-card before">
+                <div class="label-badge">BEFORE</div>
+                <img
+                    src="/images/dianping_before.svg"
+                    alt="Before Simulation"
+                    class="simulation-img"
+                />
+                <p class="desc">단순 메뉴판 번역 / 한국인 위주 마케팅</p>
+            </div>
+
+            <div class="arrow">
+                <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </div>
+
+            <div class="case-card after">
+                <div class="label-badge">AFTER</div>
+                <img
+                    src="/images/dianping_after.svg"
+                    alt="After Simulation"
+                    class="simulation-img"
+                />
+                <p class="desc">
+                    중국어 맞춤 리뷰·콘텐츠 / ‘필수 방문 코스’ 노출 강화
+                </p>
+            </div>
+        </div>
+
+        <p class="disclaimer text-center">
+            ※ 본 이미지는 이해를 돕기 위한 가상 예시입니다.
+        </p>
+    </div>
+</section>
+
+<style>
+    .section-case {
+        background: #f8f9fa;
+    }
+
+    .header {
+        margin-bottom: 3rem;
+    }
+
+    .badge {
+        display: inline-block;
+        padding: 6px 16px;
+        background: #e9ecef;
+        color: #495057;
+        font-size: 0.85rem;
+        font-weight: 700;
+        border-radius: 100px;
+        margin-bottom: 1rem;
+        letter-spacing: 0.1em;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+        color: var(--color-text-sub);
+        font-size: 1.1rem;
+    }
+
+    .case-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .case-card {
+        background: white;
+        padding: 2rem;
+        border-radius: 20px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        text-align: center;
+        position: relative;
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .case-card.after {
+        border: 2px solid var(--color-accent);
+        box-shadow: 0 8px 30px rgba(255, 192, 0, 0.15);
+    }
+
+    .label-badge {
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #666;
+        color: white;
+        padding: 4px 12px;
+        border-radius: 12px;
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+
+    .case-card.after .label-badge {
+        background: var(--color-accent);
+        color: #000;
+    }
+
+    .simulation-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1.5rem;
+        border-radius: 8px;
+        border: 1px solid #eee;
+    }
+
+    .desc {
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+
+    .arrow {
+        color: #999;
+        flex-shrink: 0;
+    }
+
+    .disclaimer {
+        font-size: 0.85rem;
+        color: #999;
+    }
+
+    @media (max-width: 768px) {
+        .case-wrapper {
+            flex-direction: column;
+            gap: 3rem;
+        }
+        .arrow {
+            transform: rotate(90deg);
+        }
+    }
+</style>

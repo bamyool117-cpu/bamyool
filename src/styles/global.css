@@ -1,0 +1,76 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+:root {
+  --color-bg-dark: #0f0505;
+  --color-bg-hero-start: #000000;
+  --color-bg-hero-end: #2d0a0a; /* Deep burgundy */
+  --color-text-white: #ffffff;
+  --color-text-main: #111111;
+  --color-text-sub: #666666;
+  --color-accent: #FFC000; /* Warm amber/yellow */
+  --color-accent-hover: #E0A800;
+  --color-border-light: #e5e5e5;
+  --section-bg-light: #ffffff;
+  --section-bg-offwhite: #f8f9fa;
+  
+  --max-width: 1100px;
+  --header-height: 60px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  color: var(--color-text-main);
+  background: var(--section-bg-light);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Utilities */
+.text-center { text-align: center; }
+.font-bold { font-weight: 700; }
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+
+/* Section Standard */
+section {
+  padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
+}

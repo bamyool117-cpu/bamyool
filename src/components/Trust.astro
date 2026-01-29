@@ -1,0 +1,142 @@
+---
+
+---
+
+<section class="section-trust">
+    <div class="container">
+        <div class="text-center header">
+            <span class="badge">PROOF</span>
+            <h2>숫자로 증명하는<br />실전 마케팅 노하우</h2>
+        </div>
+
+        <div class="metrics-grid">
+            <div class="metric-item">
+                <div class="value">300<span class="unit">%</span></div>
+                <div class="label">
+                    평균 매출 성장률<span class="tag">예시</span>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <div class="metric-item">
+                <div class="value">50<span class="unit">+</span></div>
+                <div class="label">
+                    운영 레퍼런스<span class="tag">예시</span>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <div class="metric-item">
+                <div class="value">1<span class="unit">위</span></div>
+                <div class="label">
+                    지역 맛집 랭킹<span class="tag">예시</span>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <div class="metric-item">
+                <div class="value">98<span class="unit">%</span></div>
+                <div class="label">
+                    고객 유지율<span class="tag">예시</span>
+                </div>
+            </div>
+        </div>
+
+        <p class="disclaimer text-center">
+            ※ 위 수치는 이해를 돕기 위한 예시이며, 실제 결과는 업종/지역/시즌에
+            따라 달라질 수 있습니다.
+        </p>
+    </div>
+</section>
+
+<style>
+    .section-trust {
+        background: var(--color-bg-dark);
+        color: white;
+        padding: 100px 0;
+    }
+
+    .badge {
+        background: rgba(255, 255, 255, 0.1);
+        color: var(--color-accent);
+        padding: 6px 16px;
+        border-radius: 100px;
+        font-size: 0.85rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        display: inline-block;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .metrics-grid {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+    }
+
+    .metric-item {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .value {
+        font-size: 3.5rem;
+        font-weight: 800;
+        color: var(--color-accent);
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+
+    .unit {
+        font-size: 2rem;
+        margin-left: 5px;
+    }
+
+    .label {
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .tag {
+        font-size: 0.7rem;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 2px 6px;
+        border-radius: 4px;
+        opacity: 0.7;
+    }
+
+    .separator {
+        width: 1px;
+        height: 60px;
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .disclaimer {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.4);
+    }
+
+    @media (max-width: 768px) {
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem 0;
+        }
+        .separator {
+            display: none;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        .value {
+            font-size: 2.5rem;
+        }
+    }
+</style>

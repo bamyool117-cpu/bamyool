@@ -1,0 +1,61 @@
+---
+import "../styles/global.css";
+
+import Brand from "../components/Brand.astro";
+import Hero from "../components/Hero.astro";
+import Problem from "../components/Problem.astro";
+import Solution from "../components/Solution.astro";
+import Trust from "../components/Trust.astro";
+import Process from "../components/Process.astro";
+import CaseScenario from "../components/CaseScenario.astro";
+import MonthlyTrend from "../components/MonthlyTrend.astro";
+import Pricing from "../components/Pricing.astro";
+import Contact from "../components/Contact.astro";
+---
+
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>BAMYOOL - 샤오홍슈/따종디엔핑 마케팅</title>
+        <meta
+            name="description"
+            content="중국 관광객 유입을 실제 매출로 바꿉니다. 자영업자·지역 매장을 위한 인바운드 마케팅 서비스."
+        />
+        <!-- Preload fonts or other specific metadata can go here -->
+    </head>
+    <body>
+        <Brand />
+
+        <main>
+            <Hero />
+            <Problem />
+            <Solution />
+            <Trust />
+            <Process />
+            <CaseScenario />
+            <MonthlyTrend />
+            <Pricing />
+        </main>
+
+        <Contact />
+
+        <footer class="site-footer">
+            <div class="container text-center">
+                <p class="copyright">© 2024 BAMYOOL. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>
+
+<style>
+    .site-footer {
+        background-color: var(--color-bg-dark);
+        color: rgba(255, 255, 255, 0.3);
+        padding: 2rem 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        font-size: 0.8rem;
+    }
+</style>

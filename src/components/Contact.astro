@@ -1,0 +1,120 @@
+---
+
+---
+
+<section class="section-contact">
+    <div class="container text-center">
+        <div class="content">
+            <h2 class="title">무료 상담 신청하기</h2>
+            <p class="subtitle">중국 관광객 유입, 지금 바로 시작하세요.</p>
+
+            <div class="btn-group">
+                <a
+                    href="http://qr.kakao.com/talk/0.DuOqxZx398SOGpZYmYKQXHf40-"
+                    target="_blank"
+                    class="btn btn-kakao"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                        style="margin-right:8px;"
+                    >
+                        <path
+                            d="M8 1.918c-4.418 0-8 2.973-8 6.643 0 2.21 1.309 4.183 3.33 5.377-.123.957-.463 3.344-.486 3.497-.024.16.06.26.176.22 1.432-.976 3.868-2.613 4.14-2.81 7.933.266 8.529-6.284.84-6.284zm0 0"
+                        ></path>
+                    </svg>
+                    카카오톡 상담하기
+                </a>
+                <a href="tel:010-5534-1170" class="btn btn-phone">
+                    전화 상담: <span class="num-text">010-5534-1170</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .section-contact {
+            background: var(--color-bg-dark);
+            color: white;
+            padding: 100px 0;
+        }
+
+        .title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 3.5rem;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.2rem 3rem;
+            border-radius: 100px; /* Pill shape */
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        .btn-kakao {
+            background-color: #fee500;
+            color: #191919;
+            box-shadow: 0 4px 15px rgba(254, 229, 0, 0.2);
+        }
+
+        .btn-phone {
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+        }
+        .btn-phone:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: white;
+        }
+
+        .num-text {
+            margin-left: 8px;
+            letter-spacing: 0.02em;
+        }
+
+        .small-text {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .btn-group {
+                flex-direction: column;
+                width: 100%;
+                max-width: 350px; /* Slight increase to fit button width */
+                margin-left: auto;
+                margin-right: auto;
+                gap: 1.5rem;
+            }
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</section>

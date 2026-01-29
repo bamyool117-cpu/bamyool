@@ -1,0 +1,16 @@
+{
+    "name": "bamyool-landing",
+    "type": "module",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "astro dev",
+        "start": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "astro": "astro"
+    },
+    "dependencies": {
+        "astro": "^4.16.10",
+        "puppeteer": "^24.35.0"
+    }
+}
